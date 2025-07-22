@@ -1,37 +1,40 @@
-# 🦊 Shadow Fox
+# 🦊 Shadow Fox Projects
 
-Welcome to **Shadow Fox**, a GitHub repository containing two of my featured web projects:  
-1. **My Portfolio** – A personal developer portfolio  
-2. **Zomazon** – A responsive e-commerce web app
-
-Each project demonstrates my proficiency in frontend development, user interface design, and clean responsive layouts.
+Welcome to the **Shadow Fox** repository! This repo contains two frontend web development projects built with HTML, CSS, and JavaScript.
 
 ---
 
 ## 📁 Projects Included
 
-### 🎨 My Portfolio
-A clean, personal developer portfolio that includes:
+### 1. 🌐 Portfolio Website
 
-- 💼 Projects showcase  
-- 💬 Contact form  
-- 📱 Mobile responsiveness  
-- 🧑 About me section  
+A clean, responsive personal portfolio built to showcase skills, projects, and contact details.  
+Designed with modern layout techniques, ideal for resumes or personal branding.
 
-🔗 _[Live Demo Link (if deployed)]_
+- **Tech Stack:** HTML5, CSS3, JavaScript
+- **Features:**
+  - Responsive layout for all screen sizes
+  - Sections for About, Projects, Skills, and Contact
+  - Easy-to-edit codebase
+
+🔗 Live Preview (if deployed): _Coming soon_
 
 ---
 
-### 🛒 Zomazon - E-Commerce Website
-A modern and responsive shopping website featuring:
+### 2. 🛒 Zomazon – E-Commerce UI
 
-- 🛍 Product listings  
-- 🛒 Cart functionality (Add, Remove, Clear)  
-- 💳 Checkout page with order summary  
-- 📦 Uses LocalStorage for cart data  
-- 📱 Fully responsive design  
+A responsive shopping interface inspired by modern e-commerce platforms.
 
-🔗 _[Live Demo Link (if deployed)]_
+- **Tech Stack:** HTML5, CSS3, JavaScript (LocalStorage)
+- **Features:**
+  - Dynamic product listing
+  - Add to Cart / Buy Now
+  - Cart sidebar with item count and total price
+  - Checkout page with shipping info
+  - Mobile-responsive design
+  - Clean UX matching theme of homepage
+
+🔗 Live Preview (if deployed): _Coming soon_
 
 ---
 
@@ -52,8 +55,8 @@ shadow-fox/
 │
 └── README.md            # Project documentation
 ```
-🚀 Getting Started
-📥 Clone the Repository
+#🚀 Getting Started
+**📥 Clone the Repository**
 ```
 git clone https://github.com/Chandu-0604/shadow-fox.git
 cd shadow-fox
@@ -61,22 +64,15 @@ cd shadow-fox
 📂 Explore the Projects
 To run either project locally, open the respective folder and launch index.html in your browser.
 
-💡 Technologies Used
-HTML5 & CSS3
+---
 
-JavaScript (ES6+)
+## 📬 Contact
 
-LocalStorage
+**Chandan B**  
+📧 [chandu.62004@gmail.com](mailto:chandu.62004@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/chandan-b-2950a626a)  
+🐙 [GitHub](https://github.com/Chandu-0604)
 
-Flexbox & CSS Grid
-
-Git & GitHub
-
-👨‍💻 Author
-Chandan B
-📧 Email: chandu.62004@gmail.com
-🌐 GitHub: @Chandu-0604
-🔗 LinkedIn: chandan-b-2950a626a
-
-📜 License
+---
+## 📝 License
 This repository is free to use for personal and educational purposes.
