@@ -1,0 +1,151 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #3b82f6;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Section Titles */
+main h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+/* Order Summary */
+.order-summary {
+  margin-bottom: 30px;
+}
+
+#checkout-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+#checkout-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+  color: #374151;
+}
+
+#checkout-items li:last-child {
+  border-bottom: none;
+}
+
+.order-summary p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  color: #111827;
+}
+
+/* Form */
+.checkout-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Button */
+button[type="submit"] {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}

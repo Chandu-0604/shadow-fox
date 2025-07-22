@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zomazon</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">➻ Zomazon</div>
+    <div class="search-bar">
+      <input type="text" id="navSearch" placeholder="Search Zomazon..." />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Hello, Sign in</a>
+      <a href="#">Returns</a>
+      <a href="#" id="cart-toggle">Cart (0)</a>
+    </nav>
+  </header>
+
+  <main>
+<section class="hero">
+  <div class="hero-slider">
+    <img class="hero-image active" src="images/herosection.jpg" alt="Banner 1">
+    <img class="hero-image" src="images/herosection2.jpg" alt="Banner 2">
+    <img class="hero-image" src="images/herosection3.png" alt="Banner 3">
+    <button class="arrow left">&#10094;</button>
+    <button class="arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+    <section class="amazon-category-layout">
+      <div class="category-box">
+        <h3>Up to 60% off | Kitchen Products</h3>
+        <img src="images/kitchen-offer.jpg" alt="Kitchen Products" />
+        <a href="#">Explore more</a>
+      </div>
+
+      <div class="category-box">
+        <h3>Most-Loved Fashion for You</h3>
+        <div class="fashion-grid">
+          <div class="fashion-item"><img src="images/shoe1.png" alt="Shoe 1" /></div>
+          <div class="fashion-item"><img src="images/shoe2.png" alt="Shoe 2" /></div>
+          <div class="fashion-item"><img src="images/shirt1.png" alt="Shirt 1" /></div>
+          <div class="fashion-item"><img src="images/shirt2.png" alt="Shirt 2" /></div>
+        </div>
+        <a href="#">Explore more</a>
+      </div>
+
+      <div class="category-box">
+        <h3>Customers' Most-Loved Products</h3>
+        <img src="images/customer-favorites.png" alt="Loved Products" />
+        <a href="#">Explore more</a>
+      </div>
+
+      <div class="category-box">
+        <h3>Best Sellers in Computers & Accessories</h3>
+        <div class="electronics-grid">
+          <img src="images/mouse.png" alt="Mouse">
+          <img src="images/bag.png" alt="Backpack">
+          <img src="images/laptop-stand.png" alt="Laptop Stand">
+          <img src="images/pendrive.png" alt="Pendrive">
+        </div>
+        <a href="#">Explore more</a>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="prod-header">
+        <div class="filter-buttons">
+          <button data-category="All" class="active">All</button>
+          <button data-category="Electronics">Electronics</button>
+          <button data-category="Clothing">Clothing</button>
+          <button data-category="Accessories">Accessories</button>
+        </div>
+      </div>
+      <div class="product-container" id="product-container"></div>
+    </section>
+  </main>
+
+<footer>
+  <div class="brands">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas">
+    <img src="images/samsung.png" alt="Samsung">
+    <img src="images/apple.png" alt="Apple">
+    <img src="images/h&m.png" alt="H&M">
+    <img src="images/zara.png" alt="ZARA">
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Zomazon. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Cart Sidebar -->
+  <aside id="cart-sidebar" class="cart-sidebar">
+  <h2>Your Cart</h2>
+  <button id="close-cart">✖</button>
+  <ul id="cart-items"></ul>
+  <div class="cart-footer">
+    <p>Total: ₹<span id="cart-total">0</span></p>
+    <button id="clear-cart">Clear Cart</button>
+    <button id="buy-now">Buy Now</button>
+  </div>
+</aside>
+
+<script type="module" src="js/products.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

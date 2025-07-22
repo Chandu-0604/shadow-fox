@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zomazon - Checkout</title>
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <a href="index.html" class="back-link">← Back to Shop</a>
+  </header>
+
+  <main>
+    <section class="order-summary">
+      <h2>Your Order</h2>
+      <ul id="checkout-items">
+        <!-- Cart items will be dynamically populated -->
+      </ul>
+      <p>Total: ₹<span id="checkout-total">0</span></p>
+    </section>
+
+    <section class="checkout-form-section">
+      <h2>Customer Information</h2>
+      <form id="checkout-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const checkoutItems = document.getElementById("checkout-items");
+    const checkoutTotal = document.getElementById("checkout-total");
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    function renderCheckout() {
+      checkoutItems.innerHTML = "";
+      let total = 0;
+      cart.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span>${item.name}</span>
+          <span>₹${item.price}</span>
+        `;
+        checkoutItems.appendChild(li);
+        total += item.price;
+      });
+      checkoutTotal.textContent = total;
+    }
+
+    renderCheckout();
+
+    const checkoutForm = document.getElementById("checkout-form");
+    checkoutForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you for your order!");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
