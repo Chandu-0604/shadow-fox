@@ -11,14 +11,13 @@ Welcome to the **Shadow Fox** repository! This repo contains two frontend web de
 A clean, responsive personal portfolio built to showcase skills, projects, and contact details.  
 Designed with modern layout techniques, ideal for resumes or personal branding.
 
-- **Tech Stack:** HTML5, CSS3, JavaScript
+- **Tech Stack:** HTML5, CSS3
 - **Features:**
   - Responsive layout for all screen sizes
   - Sections for About, Projects, Skills, and Contact
   - Easy-to-edit codebase
 
-🔗 Live Preview (if deployed): _Coming soon_
-
+🔗 Live Preview (if deployed): https://chandanb-portfolio.netlify.app/
 ---
 
 ### 2. 🛒 Zomazon – E-Commerce UI
