@@ -11,7 +11,7 @@ Welcome to the **Shadow Fox** repository! This repo contains two frontend web de
 A clean, responsive personal portfolio built to showcase skills, projects, and contact details.  
 Designed with modern layout techniques, ideal for resumes or personal branding.
 
-- **Tech Stack:** HTML5, CSS3
+- **Tech Stack:** HTML5, CSS3, JavaScript 
 - **Features:**
   - Responsive layout for all screen sizes
   - Sections for About, Projects, Skills, and Contact
@@ -24,14 +24,13 @@ Designed with modern layout techniques, ideal for resumes or personal branding.
 
 A responsive shopping interface inspired by modern e-commerce platforms.
 
-- **Tech Stack:** HTML5, CSS3, JavaScript (LocalStorage)
+- **Tech Stack:** HTML5, CSS3, JavaScript 
 - **Features:**
   - Dynamic product listing
   - Add to Cart / Buy Now
   - Cart sidebar with item count and total price
   - Checkout page with shipping info
   - Mobile-responsive design
-  - Clean UX matching theme of homepage
 
 🔗 Live Preview (if deployed): _Coming soon_
 
@@ -41,10 +40,11 @@ A responsive shopping interface inspired by modern e-commerce platforms.
 
 ```
 shadow-fox/
-├── my-portfolio/        # Personal developer portfolio
+├── my-portfolio/      # Personal developer portfolio
+|   ├──assets/            
 │   ├── index.html
-│   ├── css/
-│   └── js/
+│   ├── style.css
+│   └── script.js
 │
 ├── zomazon/             # E-commerce website project
 │   ├── index.html
